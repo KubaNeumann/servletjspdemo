@@ -13,13 +13,13 @@ import javax.servlet.http.HttpServletResponse;
 public class GreetingServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
-	
+
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		
+
 		response.setContentType("text/html");
-		
+
 		PrintWriter out = response.getWriter();
 		out.println("<html><body><h2>Hello World! Today is " + new java.util.Date() + "</h2></body></html>");
 		out.close();

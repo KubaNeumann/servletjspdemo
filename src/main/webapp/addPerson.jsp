@@ -13,13 +13,15 @@
 
 <jsp:useBean id="storage" class="com.example.servletjspdemo.service.StorageService" scope="application" />
 
+
+
 <% 
   storage.add(person);
 %>
 
 <p>Following person has been added to storage: </p>
 <p>First name: ${person.firstName} </p>
-<p>Year of birth: <jsp:getProperty name="person" property="yob"></jsp:getProperty></p>
+<p>Year of birth: ${person.yob}</p>
 <p>
   <a href="showAllPersons.jsp">Show all persons</a>
 </p>
