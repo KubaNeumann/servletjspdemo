@@ -17,6 +17,7 @@
   Year of birth :<input type="text"  name="yob" value="${person.yob}" /><br />
   <input type="submit" value=" OK ">
   
+  
 </form>
 
 </body>
