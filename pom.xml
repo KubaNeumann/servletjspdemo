@@ -1,31 +1,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+
 	<groupId>com.example</groupId>
+	<artifactId>servletjspdemo</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
+
 	<name>Java EE 6 - Servlet and JSP demo</name>
-	<url>http://maven.apache.org</url>
-	<repositories>
-		<!-- Several key Java EE APIs and RIs are missing from the Maven Central 
-			Repository -->
-		<!-- The goal is to eventually eliminate the reliance on the JBoss repository -->
-		<repository>
-			<id>repository.jboss.org</id>
-			<name>JBoss Repository</name>
-			<url>http://repository.jboss.org/maven2</url>
-		</repository>
-		<repository>
-			<id>java.net2</id>
-			<name>Repository hosting the jee6 artifacts</name>
-			<url>http://download.java.net/maven/2</url>
-		</repository>
-		<repository>
-			<id>java.net.glassfish</id>
-			<name>Repository hosting the jee6 artifacts from glassfish reference implementation</name>
-			<url>http://download.java.net/maven/glassfish/</url>
-		</repository>
-	</repositories>
+	<url>https://github.com/KubaNeumann/servletjspdemo</url>
+	
 	<dependencies>
 		<dependency>
 			<groupId>javax</groupId>
@@ -33,20 +17,8 @@
 			<version>6.0</version>
 			<scope>provided</scope>
 		</dependency>
-
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.9</version>
-		</dependency>
-
-		<dependency>
-			<groupId>log4j</groupId>
-			<artifactId>log4j</artifactId>
-			<version>1.2.16</version>
-		</dependency>
-
 	</dependencies>
+
 	<build>
 		<finalName>servletjspdemo</finalName>
 		<plugins>
@@ -82,7 +54,5 @@
 			</plugin>
 		</plugins>
 	</build>
-
-	<artifactId>servletjspdemo</artifactId>
 </project>
 
